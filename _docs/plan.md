@@ -1,37 +1,29 @@
-# Household Chore Management Tool - Scope Document
+# Household Chore Management Tool - Requirements
 
-## Core Purpose
-Track chore assignments (who does what).
+## Core Functionality
 
----
+### Chore Types
+- One-time manual tasks (e.g., "buy milk")
+- Recurring tasks with customizable frequency (e.g., "vacuum weekly")
 
-## Chore Assignment
-- Manual per-week assignment system
-- Each chore has an assigned person/roommate
+### User Assignment
+- Assign each chore to a specific user
+- **Recurring tasks:** Manual assignment per period (different user can be assigned each week)
 
----
+### Completion Tracking
+Three status states:
+1. Not Started
+2. In Progress
+3. Completed
 
-## Scheduling
-- Weekly manual assignment approach
-- No recurring/auto-schedule features
+### Authentication & Users
+- Self-hosted user management
+- Email/password authentication
+- Multi-user support
 
----
+### Dashboard
+- Shared dashboard accessible from multiple devices
 
-## Notifications
-- No automatic notifications
-- No reminders enabled
-
----
-
-## Task Tracking
-- Completion statuses:
-  - Not Started
-  - In Progress
-  - Completed
-- Due date for each chore
-- Notes field available for observations
-
----
-
-## Summary
-A simple weekly chore tracker with manual assignments, status tracking (not started/in progress/completed), due dates, and optional notes. No automatic notifications or reminders.
+## Technical Preferences
+- No automatic reminders (manual tracking only)
+- Simple, minimal feature set
