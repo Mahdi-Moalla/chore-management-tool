@@ -1,0 +1,20 @@
+[project]
+name = "chore-management"
+version = "0.1.0"
+description = "Chore management tool for households"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django==5.2.*",
+]
+
+[project.scripts]
+chore-management = "chore_management:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = "test_*.py"
