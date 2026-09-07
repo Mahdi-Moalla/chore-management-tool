@@ -1,42 +1,37 @@
-# Chore Management Tool - Requirements Document
+# Household Chore Management Tool - Scope Document
 
-## Scope
+## Core Purpose
+Track chore assignments (who does what).
 
-A lightweight, list-based tool for managing shared household chores among roommates.
+---
 
-## User Types
+## Chore Assignment
+- Manual per-week assignment system
+- Each chore has an assigned person/roommate
 
-- Roommates (customizable number of users)
-- Add/remove user accounts as needed
+---
 
-## Core Features
+## Scheduling
+- Weekly manual assignment approach
+- No recurring/auto-schedule features
 
-### Chores
+---
 
-Chore types are unlimited and defined through free-form text input when adding a new chore.
+## Notifications
+- No automatic notifications
+- No reminders enabled
 
-### Chore Status
+---
 
-Each chore tracks three distinct states:
+## Task Tracking
+- Completion statuses:
+  - Not Started
+  - In Progress
+  - Completed
+- Due date for each chore
+- Notes field available for observations
 
-1. Not started
-2. In progress
-3. Completed
+---
 
-### Chore Assignment
-
-- Assign chores to specific users via a dropdown selection
-- Manual assignment only (no auto-assignment or intelligent scheduling)
-- One-to-one mapping between chores and responsible user
-
-## User Interface
-
-- List-based interface focused on data organization and task tracking
-- No notifications/reminders functionality included
-- Clean, straightforward chore roster view
-
-## Constraints
-
-- Manual chore assignment and management only
-- List-driven approach without alerts or push notifications
-- Flexible for small to medium-sized shared living situations
+## Summary
+A simple weekly chore tracker with manual assignments, status tracking (not started/in progress/completed), due dates, and optional notes. No automatic notifications or reminders.
